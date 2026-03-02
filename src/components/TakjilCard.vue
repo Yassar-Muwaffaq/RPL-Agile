@@ -2,6 +2,13 @@
 defineProps({
   data: Object,
 });
+
+// Fungsi untuk membuka Google Maps di tab baru
+const bukaMap = (name, address) => {
+  const query = encodeURIComponent(`${name} ${address}`);
+  const url = `https://www.google.com/maps/search/?api=1&query=${query}`;
+  window.open(url, '_blank'); // Buka link di tab baru
+};
 </script>
 
 <template>
@@ -19,7 +26,9 @@ defineProps({
         Tersedia Makanan Berat
       </div>
 
-      <button class="btn-pergi">Pergi Sekarang <i>➜</i></button>
+      <button class="btn-pergi" @click="bukaMap(data.name, data.address)">
+        Pergi Sekarang <i>➜</i>
+      </button> 
     </div>
   </div>
 </template>

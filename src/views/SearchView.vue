@@ -77,7 +77,7 @@ const filteredLocations = computed(() => {
         />
       </div>
       <div v-if="filteredLocations.length === 0" style="text-align: center; width: 100%; grid-column: 1 / -1;">
-        <h3 style="color: #666;">Maaf, lokasi takjil tidak ditemukan :(</h3>
+        <h3 style="color: #666;">Maaf, lokasi takjil tidak ditemukan :</h3>
       </div>
     </div>
   </div>

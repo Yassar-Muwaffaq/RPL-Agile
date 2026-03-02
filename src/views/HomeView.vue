@@ -25,7 +25,7 @@ import Navbar from '@/components/Navbar.vue';
             Yuk, luangkan waktu untuk berbuka puasa bersama. Nikmati hidangan
             takjil, ciptakan tawa, dan kebersamaan di satu meja.
           </p>
-          <button class="btn-gabung">Gabung</button>
+          <router-link class="btn-gabung" to="/agenda" active-class="active">Agenda</router-link>
         </div>
       </div>
     </div>
@@ -117,6 +117,7 @@ import Navbar from '@/components/Navbar.vue';
   cursor: pointer;
   align-self: flex-start; /* Biar tombolnya gak melebar ke kanan */
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 .btn-gabung:hover {
