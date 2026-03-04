@@ -30,6 +30,7 @@ cd ..
 cd server
 npm install
 
+import takjil_db to pgadmin4 with database name: RPL
 ```
 
 ### Compile and Hot-Reload for Development
